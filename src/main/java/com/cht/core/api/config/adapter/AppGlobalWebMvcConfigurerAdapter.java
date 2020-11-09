@@ -29,6 +29,6 @@ public class AppGlobalWebMvcConfigurerAdapter implements WebMvcConfigurer, ChtHt
     }
 
     public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
-        this.setT3HttpMessageConverter(converters);
+        this.setChtHttpMessageConverter(converters);
     }
 }

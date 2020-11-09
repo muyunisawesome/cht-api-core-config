@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface ChtHttpMessageConverter {
 
-    default List<HttpMessageConverter<?>> setT3HttpMessageConverter(List<HttpMessageConverter<?>> converters) {
+    default List<HttpMessageConverter<?>> setChtHttpMessageConverter(List<HttpMessageConverter<?>> converters) {
         converters.removeIf((converter) -> {
             return converter instanceof MappingJackson2HttpMessageConverter || converter instanceof MappingJackson2SmileHttpMessageConverter || converter instanceof MappingJackson2CborHttpMessageConverter || converter instanceof FastJsonHttpMessageConverter;
         });
